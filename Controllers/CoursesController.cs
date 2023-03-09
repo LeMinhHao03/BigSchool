@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BigSchool.Models;
+using BigSchool.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +10,19 @@ namespace BigSchool.Controllers
 {
     public class CoursesController : Controller
     {
+        private readonly ApplicationDbContext _dbcontext;
+        public CoursesController()
+        {
+            _dbcontext= new ApplicationDbContext();
+        }
         // GET: Courses
         public ActionResult Create()
         {
-            return View();
+            var viewModel = new CourseViewModel
+            {
+                Categories = _dbcontext.Category.ToList()
+            };
+            return View(viewModel);
         }
     }
 }
