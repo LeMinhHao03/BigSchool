@@ -187,6 +187,10 @@
     <Compile Include="Migrations\202303040259562_Khoi tao du lieu Category.designer.cs">
       <DependentUpon>202303040259562_Khoi tao du lieu Category.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202303110326270_AddNameColumnToApplicationUser.cs" />
+    <Compile Include="Migrations\202303110326270_AddNameColumnToApplicationUser.designer.cs">
+      <DependentUpon>202303110326270_AddNameColumnToApplicationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -197,6 +201,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CourseViewModel.cs" />
+    <Compile Include="ViewModels\FutureDate.cs" />
+    <Compile Include="ViewModels\ValidTime.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -281,6 +287,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202303040259562_Khoi tao du lieu Category.resx">
       <DependentUpon>202303040259562_Khoi tao du lieu Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303110326270_AddNameColumnToApplicationUser.resx">
+      <DependentUpon>202303110326270_AddNameColumnToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
