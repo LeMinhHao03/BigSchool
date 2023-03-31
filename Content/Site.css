@@ -28,7 +28,7 @@ textarea {
     background-color: #777;
     border-color: #fff
 }*/
-/*.navbar-inverse {
+.navbar-inverse {
     background-color: #d41d50;
     border-color: #fbf6f6;
 }
@@ -37,8 +37,8 @@ textarea {
 }
 .navbar-inverse .navbar-brand{
     color: white;
-}*/
-/* Course Layout */
+}
+/*Course Layout*/ 
 .course {
     list-style: none;
 }
@@ -60,4 +60,12 @@ textarea {
    position: absolute;
    top: 0;
    left: 70px;
+}
+.course > li .action{
+    display: none;
+    left: 70px;
+    position: absolute;
+}
+.course > li:hover .action{
+    display: block;
 }
