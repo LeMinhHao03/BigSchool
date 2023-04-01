@@ -59,6 +59,7 @@ namespace BigSchool.Controllers
                 .Select(a => a.Course)
                 .Include(l => l.Lecturer)
                 .Include(l => l.Category)
+                .Where(a => a.IsCanceled == false)
                 .ToList();
 
 

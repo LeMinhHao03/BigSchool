@@ -66,6 +66,10 @@ textarea {
     left: 70px;
     position: absolute;
 }
+
+/*.course > li .action {
+        display: block;
+}*/
 .course > li:hover .action{
     display: block;
 }
